@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite dev --force",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "npm run lint:script && npm run lint:style",
@@ -13,18 +13,24 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "animated": "^0.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.148.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
+    "@types/dat.gui": "^0.7.7",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/stats.js": "^0.17.0",
+    "@types/three": "^0.146.0",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
     "@vitejs/plugin-react": "^2.2.0",
     "commitlint": "^17.2.0",
+    "dat.gui": "^0.7.9",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -32,6 +38,8 @@
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "sass": "^1.56.1",
+    "stats.js": "^0.17.0",
     "stylelint": "^14.15.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recess-order": "^3.0.0",

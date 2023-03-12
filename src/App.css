@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -38,4 +38,37 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+.box {
+    height: 100px;
+    overflow: scroll;
+}
+
+.container {
+    animation: box 0.4s;
+}
+
+.title-list {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: #212121;
+    border-radius: 20px;
+}
+
+@keyframes box {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(-0);
+    }
 }
